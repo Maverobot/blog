@@ -24,10 +24,11 @@ github_username: Maverobot
 
 # Build settings
 markdown: kramdown
-remote-theme: jekyll-theme-hydejack
+remote-theme: qwtel/hydejack
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
