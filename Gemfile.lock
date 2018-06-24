@@ -155,8 +155,6 @@ GEM
     jekyll-theme-hacker (0.1.1)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
-    jekyll-theme-hydejack (7.5.1)
-      jekyll (~> 3.6)
     jekyll-theme-leap-day (0.1.1)
       jekyll (~> 3.5)
       jekyll-seo-tag (~> 2.0)
@@ -242,18 +240,14 @@ GEM
     tzinfo-data (1.2018.5)
       tzinfo (>= 1.0.0)
     unicode-display_width (1.4.0)
-    wdm (0.1.1)
 
 PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
   github-pages
-  jekyll-paginate
   jekyll-remote-theme
-  jekyll-theme-hydejack
   tzinfo-data
-  wdm (~> 0.1.0)
 
 BUNDLED WITH
    1.16.2

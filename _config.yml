@@ -17,21 +17,38 @@ title: Snow and Beer
 email: no@email.yet
 description: >- # this means to ignore newlines until "baseurl:"
   Not yet awesome blog.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "maverobot.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-repository: Maverobot/maverobot.github.io
+baseurl: /blog
+url: https://maverobot.github.io
 twitter_username: Maverobot
 github_username: Maverobot
+repository: Maverobot/maverobot.github.io
 github: [metadata]
+minimal_mistakes_skin: dark
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-hydejack
-remote-theme: qwtel/hydejack
+remote_theme: mmistakes/minimal-mistakes
+# Outputting
+permalink: /:categories/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Plugins (previously gems:)
 plugins:
-  - jekyll-feed
   - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
   - jekyll-remote-theme
+
+author:
+  name   : "Zheng Qu"
+  bio    : "My awesome biography constrained to a sentence or two goes here."
+  email  : # optional
+  uri    : "https://mademistakes.com"
+#  avatar : "/assets/images/bio-photo.jpg"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -44,3 +61,16 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true

@@ -1,5 +1,4 @@
 ---
-layout: blog 
 title:  "How to install CUDA on a laptop with optimus"
 date:   2018-06-24 13:50:00 +0200
 categories: Tutorials 

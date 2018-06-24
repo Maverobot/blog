@@ -1,5 +1,4 @@
 ---
-layout: blog
 title:  Setup Kinect on Ubuntu 
 date:   2018-06-24 13:53:00 +0200
 categories: Tutorials 
