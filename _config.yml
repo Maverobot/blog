@@ -23,7 +23,7 @@ twitter_username: Maverobot
 github_username: Maverobot
 repository: Maverobot/maverobot.github.io
 github: [metadata]
-minimal_mistakes_skin: dark
+minimal_mistakes_skin: sunrise
 
 # Build settings
 markdown: kramdown
