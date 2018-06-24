@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: blog 
 title:  Setup hotspot on Ubuntu 14.04 
 date:   2018-06-24 13:57:00 +0200
 categories: General 
