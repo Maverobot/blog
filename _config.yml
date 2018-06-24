@@ -48,7 +48,7 @@ author:
   bio    : "My awesome biography constrained to a sentence or two goes here."
   email  : # optional
   uri    : "https://mademistakes.com"
-#  avatar : "/assets/images/bio-photo.jpg"
+  avatar : "/assets/images/bio-photo.jpg"
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
