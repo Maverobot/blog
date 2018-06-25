@@ -46,22 +46,11 @@ plugins:
 
 author:
   name   : "Zheng Qu"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
-  email  : # optional
-  uri    : "https://mademistakes.com"
+  bio    : "A robotics enthusiast and deep learning learner, who is currently practicing dunking basketball."
   avatar : "/assets/images/bio-photo.jpg"
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  email  : # optional
+  uri    : "https://maverobot.github.io"
+  github : "Maverobot"
 
 defaults:
   # _posts
@@ -76,4 +65,3 @@ defaults:
       share: true
       related: true
       classes: wide
-
