@@ -8,9 +8,7 @@ Today I encountered a weird problem when using `Eigen` library with keyword `aut
 
 {% highlight c++ %}
 Eigen::Affine3d aff; 
-
-// aff is assigned with a valid value
-// ...
+// aff is assigned with a valid value ...
 
 auto r = aff.rotation();
 auto res = r * r;
