@@ -36,7 +36,7 @@ timezone: Europe/Berlin
 search: true
 
 # Google search console
-google-site-verification: "_Rat-s_skAPxkrWuzJmHMEPGZDiuKtHIO6FH2Ff1ZC0"
+google_site_verification: "_Rat-s_skAPxkrWuzJmHMEPGZDiuKtHIO6FH2Ff1ZC0"
 
 # Comments settings
 comments:
