@@ -35,6 +35,10 @@ paginate_path: /page:num/
 timezone: Europe/Berlin
 search: true
 
+# Comments settings
+comments:
+  provider               : "google-plus"
+
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
@@ -65,3 +69,4 @@ defaults:
       share: true
       related: true
       classes: wide
+      comments: true
