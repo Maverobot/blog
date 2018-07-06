@@ -1,7 +1,7 @@
 ---
 title:  "How to reassign a static IP address with dnsmasq"
 date:   2018-07-06 15:30:00 +0200
-categories: General 
+categories: Tutorials 
 ---
 This post is a revised version of [link][original post].
 
