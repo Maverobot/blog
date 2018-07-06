@@ -6,7 +6,7 @@ categories: General
 
 Here are the steps for configuring a DHCP server in a local network.
 
-Set static IP to the second network card `enp9s3` (this name can be different on a different PC) on the real-time PC. Run
+Set static IP to the second network card `enp9s3` (this name can be different on a different PC) on the DHCP server PC. Run
 ```
  sudo vi /etc/network/interfaces
 ```
@@ -31,7 +31,7 @@ Restart network service by
 ```
 sudo service networking restart
 ```
-Setup DHCP server on real-time PC
+Setup DHCP server
 Install dnsmasq package
 ```
 sudo apt-get install dnsmasq
