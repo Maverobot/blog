@@ -15,7 +15,8 @@ Edit the file according to this sample:
 # interfaces(5) file used by ifup(8) and ifdown(8)
 auto lo
 iface lo inet loopback
-# DevNet interface 
+
+# The other network interface 
 auto eno123
 iface eno123 inet dhcp
 
