@@ -1,5 +1,5 @@
 ---
-title:  Setup Kinect on Ubuntu 
+title:  Setup Kinect on Ubuntu 14.04 
 date:   2018-06-24 13:53:00 +0200
 categories: Tutorials 
 ---
