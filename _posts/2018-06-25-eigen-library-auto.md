@@ -25,8 +25,8 @@ I still have not quite understand this issue. As a temporary solution, using `au
 I will post another article once I understand it fully. 
 
 
-[link 1]: [https://stackoverflow.com/questions/26705446/eigen-auto-type-deduction-in-general-product]
-[link 2]: [https://stackoverflow.com/questions/27113261/eigen-and-c11-type-inference-fails-for-cholesky-of-matrix-product]
-[link 3]: [https://eigen.tuxfamily.org/dox/TopicLazyEvaluation.html]
+[link 1]: https://stackoverflow.com/questions/26705446/eigen-auto-type-deduction-in-general-product
+[link 2]: https://stackoverflow.com/questions/27113261/eigen-and-c11-type-inference-fails-for-cholesky-of-matrix-product
+[link 3]: https://eigen.tuxfamily.org/dox/TopicLazyEvaluation.html
 
 

@@ -29,4 +29,4 @@ The following steps should be followed:
 6. Start networking on the client machine or `sudo dhclient`.
 
 
-[original post]: [http://trentsonlinedocs.xyz/how_to_reassign_a_static_ip_address_with_dnsmasq/]
+[original post]: http://trentsonlinedocs.xyz/how_to_reassign_a_static_ip_address_with_dnsmasq/
