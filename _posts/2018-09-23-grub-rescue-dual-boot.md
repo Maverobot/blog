@@ -29,3 +29,5 @@ linux /vmlinuz root=/dev/sda9 ro
 initrd /initrd.img
 boot
 ```
+
+After writing down this little post, I found out this [page](https://www.linux.com/learn/how-rescue-non-booting-grub-2-linux%20%20) containing much better explanation of this process
