@@ -1,7 +1,7 @@
 ---
-title:  Setup Kinect on Ubuntu 14.04 
-date:   2018-06-24 13:53:00 +0200
-categories: Tutorials 
+title:  Setup Kinect on Ubuntu 14.04
+date:   2018-06-24T13:53:00+02:00
+categories: ["Tutorials"]
 ---
 
 The following steps are needed for Kinect to work properly in Ubuntu 14.04.
@@ -71,6 +71,3 @@ Sometimes the sample programs can only run with root. In this case, there are tw
 
   * Solution 2:
     ```sudo adduser $USER root```, then log out and log in.
-
-
-

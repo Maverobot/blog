@@ -1,7 +1,7 @@
 ---
-title:  Setup hotspot on Ubuntu 14.04 
-date:   2018-06-24 13:57:00 +0200
-categories: Tutorials 
+title:  Setup hotspot on Ubuntu 14.04
+date:   2018-06-24T13:57:00+02:00
+categories: ["Tutorials"]
 ---
 
 * Disable WIFI and plug in an internet cable to your laptop so that your Ubuntu is connect to a wired internet and wireless is disabled.
@@ -15,4 +15,3 @@ categories: Tutorials
 * Go to Wi-Fi Security tab, select security type `WPA & WPA2 Personal` and set a password.
 * Go to IPv4 Settings tab, from Method drop-down box select `Shared to other computers`
 * Open the configuration file by ```gksu gedit /etc/NetworkManager/system-connections/wifi-hotspot```, find the line ```mode=infrastructure``` and change it to ```mode=ap```.
-
