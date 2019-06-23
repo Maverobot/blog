@@ -2,6 +2,8 @@
 title:  "How to boot from grub-rescue shell"
 date:   2018-09-23T16:32:00+02:00
 categories: ["Tutorials"]
+thumbnailImage: https://i.ibb.co/ys52Ftt/fire-man.jpg
+coverImage: https://i.ibb.co/ys52Ftt/fire-man.jpg
 ---
 
 Today I tried to fix an old issue with an old laptop having dual boot - windows / ubuntu. This issue occurred one day out of nowhere (someone from forums said it was caused by a windows update).
