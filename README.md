@@ -4,5 +4,5 @@ This is a repository for my personal website.
 
 To test the website locally, run the following command:
 ```
-bundle exec jekyll serve
+hugo server
 ```
