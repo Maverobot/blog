@@ -170,7 +170,7 @@ canonifyurls = true
 
   # Display `Next` on left side of the pagination, and `Prev` on right side one.
   # If you set this value to `true`, these positions swap.
-  # swapPaginator = true
+  swapPaginator = true
 
   # Custom CSS. Put here your custom CSS files. They are loaded after the theme CSS;
   # they have to be referred from static root. Example
