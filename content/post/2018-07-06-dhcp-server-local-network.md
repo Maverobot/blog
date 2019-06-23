@@ -1,7 +1,7 @@
 ---
 title:  "How to configure DHCP server for local network"
-date:   2018-07-06 14:30:00 +0200
-categories: Tutorials 
+date:   2018-07-06T14:30:00+02:00
+categories: ["Tutorials"]
 ---
 
 Here are the steps for configuring a DHCP server in a local network.
@@ -16,7 +16,7 @@ Edit the file according to this sample:
 auto lo
 iface lo inet loopback
 
-# The other network interface 
+# The other network interface
 auto eno123
 iface eno123 inet dhcp
 
@@ -37,31 +37,31 @@ Install dnsmasq package
 ```
 sudo apt-get install dnsmasq
 ```
-Check out what network interfaces exist. Run `ifconfig -a`. The output should be something similar to this. 
+Check out what network interfaces exist. Run `ifconfig -a`. The output should be something similar to this.
 ```
-enp9s3    Link encap:Ethernet  HWaddr 91:2b:2e:59:cf:df  
+enp9s3    Link encap:Ethernet  HWaddr 91:2b:2e:59:cf:df
           UP BROADCAST MULTICAST  MTU:1500  Metric:1
           RX packets:558 errors:0 dropped:0 overruns:0 frame:0
           TX packets:1616 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:1000 
+          collisions:0 txqueuelen:1000
           RX bytes:67665 (67.6 KB)  TX bytes:260734 (260.7 KB)
-          Interrupt:20 Memory:f7200000-f7220000 
-eno123    Link encap:Ethernet  HWaddr 27:02:1f:2a:f1:ac  
+          Interrupt:20 Memory:f7200000-f7220000
+eno123    Link encap:Ethernet  HWaddr 27:02:1f:2a:f1:ac
           inet addr:192.168.122.123  Bcast:192.168.122.255  Mask:255.255.255.0
           inet6 addr: fe80::279a:1f01:c7b:78b1/64 Scope:Link
           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
           RX packets:396017 errors:0 dropped:0 overruns:0 frame:0
           TX packets:192658 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:1000 
+          collisions:0 txqueuelen:1000
           RX bytes:361146437 (361.1 MB)  TX bytes:26264534 (26.2 MB)
-          Memory:f7100000-f717ffff 
-lo        Link encap:Local Loopback  
+          Memory:f7100000-f717ffff
+lo        Link encap:Local Loopback
           inet addr:127.0.0.1  Mask:255.0.0.0
           inet6 addr: ::1/128 Scope:Host
           UP LOOPBACK RUNNING  MTU:65536  Metric:1
           RX packets:753842 errors:0 dropped:0 overruns:0 frame:0
           TX packets:753842 errors:0 dropped:0 overruns:0 carrier:0
-          collisions:0 txqueuelen:1000 
+          collisions:0 txqueuelen:1000
           RX bytes:49121050 (49.1 MB)  TX bytes:49121050 (49.1 MB)
 ```
 `eno123` is the other ethernet interface, which has nothing to do with our configuration here.
