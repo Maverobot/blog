@@ -19,7 +19,7 @@ title = "Zheng Qu's Blog"
 theme = "hugo-tranquilpeak-theme"
 disqusShortname = "hugo-tranquilpeak-theme"
 # googleAnalytics = "UA-123-45"
-paginate = 7
+paginate = 10
 canonifyurls = true
 
 [permalinks]
