@@ -1,0 +1,62 @@
+#+hugo_base_dir: ../../
+#+hugo_section: post
+
+#+hugo_weight: 2001
+#+hugo_auto_set_lastmod: t
+
+#+title: Get started with sed
+
+#+date: 2020-06-26
+#+author: Zheng Qu
+
+#+hugo_tags: sed
+#+hugo_categories: cli
+
+#+hugo_draft: false
+
+* What is sed?
+~sed~ is a "*s*tream *ed*itor for filtering and transforming text". Here is a very detailed [[https://www.grymoire.com/Unix/Sed.html][tutorial]].
+
+* Basic usages
+** Use "s" for substitution
+Basic syntax:
+
+#+BEGIN_SRC bash :exports both
+  echo "Sunday Monday" | sed 's/day/night/'
+#+END_SRC
+
+#+RESULTS:
+: Sunnight Monday
+
+Note that only the first occurrence of ~day~ was replaced by ~night~. To replace all, you have to use sed pattern flag =/g= for *g*lobal replacement.
+
+#+BEGIN_SRC bash :exports both
+  echo "Sunday Monday" | sed 's/day/night/g'
+#+END_SRC
+
+#+RESULTS:
+: Sunnight Monnight
+
+** Flexible delimiters
+I think we all agree that the following code is ugly:
+
+#+BEGIN_SRC bash
+  echo "/usr/local/bin/n" | sed 's/\/usr\/local/\/usr/'
+#+END_SRC
+
+With ~sed~, the delimiter does not need to be =/=. It can be =/=, =_=,  =-=, ~#~, ~*~ etc. Pick the one fit you the best.
+
+#+BEGIN_SRC bash
+  echo "/usr/local/bin/n" | sed 's_/usr/local_/usr_'
+  echo "/usr/local/bin/n" | sed 's-/usr/local-/usr-'
+  echo "/usr/local/bin/n" | sed 's#/usr/local#/usr#'
+  echo "/usr/local/bin/n" | sed 's*/usr/local*/usr*'
+  echo "/usr/local/bin/n" | sed 's</usr/local</usr<'
+  # ...
+#+END_SRC
+
+* Footnotes
+* COMMENT Local Variables
+# Local Variables:
+# org-hugo-footer: "\n\n[//]: # \"Exported with love from a post written in Org mode\"\n[//]: # \"- https://github.com/kaushalmodi/ox-hugo\""
+# End:
