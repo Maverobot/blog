@@ -6,14 +6,13 @@ categories: ["General"]
 
 Today I encountered a weird problem when using `Eigen` library with keyword `auto`. The scenario is as follows:
 
-{% highlight c++ %}
+```c++
 Eigen::Affine3d aff;
 // aff is assigned with a valid value ...
 
 auto r = aff.rotation();
 auto res = r * r;
-
-{% endhighlight %}
+```
 
 In the end, the result variable `res` contains a `3x3` matrix with only zero values, no matter what values `aff` has. After a bit of googling, I found out some relevant issues and `Eigen` documentation:
 * [Eigen auto type deduction in general product][link 1]
