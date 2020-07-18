@@ -1,0 +1,48 @@
+#+hugo_base_dir: ../../
+#+hugo_section: post
+
+#+hugo_weight: 2001
+#+hugo_auto_set_lastmod: t
+
+#+title: Deprecated linux commands
+
+#+date: <2020-07-18 Sa>
+#+author: Zheng Qu
+
+#+hugo_tags: sed
+#+hugo_categories: cli
+
+#+hugo_draft: false
+
+* What are deprecated?
++ ~ifconfig~
++ ~netstats~
++ ~route~
+
+* What are the better options?
++ ~ip~
++ ~ss~
++ ~lsof -iTCP~
+
+* Basic usages
+** Command ~ip~
+Show / manipulate routing, network devices, interfaces and tunnels
++ Show ip adresses: ~ip address~ or ~ip a~
++ Show network devices: ~ip link~ or ~ip l~
++ Show routing table entry: ~ip route~ or ~ip r~
++ Use color output: for example ~ip -c a~, ~ip -c l~
+** Command ~ss~
+Another utility to investigate sockets
++ Show processes with listening TCP sockets: ~ss -plt~
++ For more infomation: ~man ss~
+** Command ~lsof~
+[[https://www.tecmint.com/10-lsof-command-examples-in-linux/][Here]] is a good article about this command.
+
+For finding processes running on port ~8080~:
+#+begin_src bash
+lsof -iTCP:8080
+#+end_src
+* COMMENT Local Variables
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:
