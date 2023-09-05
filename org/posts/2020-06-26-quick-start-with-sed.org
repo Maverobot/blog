@@ -1,5 +1,5 @@
 #+hugo_base_dir: ../../
-#+hugo_section: post
+#+hugo_section: old_posts
 
 #+hugo_weight: 2001
 #+hugo_auto_set_lastmod: t

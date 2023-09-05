@@ -1,0 +1,22 @@
+#+hugo_base_dir: ../../
+#+hugo_section: blog
+
+#+hugo_weight: 2001
+#+hugo_auto_set_lastmod: t
+
+#+title: First Post
+
+#+date: <2020-07-18 Sa>
+#+author: Zheng Qu
+
+#+hugo_tags:
+#+hugo_categories:
+
+#+hugo_draft: false
+
+Stay tuned for more exciting content! 🚀
+
+* COMMENT Local Variables
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:

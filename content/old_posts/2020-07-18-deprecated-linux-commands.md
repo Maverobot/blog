@@ -2,7 +2,7 @@
 title = "Deprecated linux commands"
 author = ["Zheng Qu"]
 date = 2020-07-18T00:00:00+02:00
-lastmod = 2020-07-18T12:50:05+02:00
+lastmod = 2023-09-06T00:24:16+02:00
 tags = ["sed"]
 categories = ["cli"]
 draft = false
