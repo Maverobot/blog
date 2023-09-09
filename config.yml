@@ -45,8 +45,8 @@ params:
   label:
     title: Zheng Qu
     text: Welcome to the My Personal Website
-    lightNavIcon: /uploads/sun.svg
-    darkNavIcon: /uploads/zap.svg
+    lightNavIcon: /uploads/black_logo.png
+    darkNavIcon: /uploads/green_logo.png
     iconHeight: "35"
     iconWIdth: "35"
   comments: true
@@ -63,11 +63,11 @@ params:
   contactFormAction: https://formsubmit.io/send/c5155564-1867-4d55-8443-c00be6d5949d
   assets:
     disableFingerprinting: false
-    favicon: /uploads/zap.svg
-    favicon16x16: /uploads/zap.svg
-    favicon32x32: /uploads/zap.svg
-    apple_touch_icon: /uploads/zap.svg
-    safari_pinned_tab: /uploads/zap.svg
+    favicon: /uploads/green_logo.png
+    favicon16x16: /uploads/green_logo.png
+    favicon32x32: /uploads/green_logo.png
+    apple_touch_icon: /uploads/green_logo.png
+    safari_pinned_tab: /uploads/green_logo.png
   ShowReadingTime: true
   ShowBreadCrumbs: true
   homepage:
