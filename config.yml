@@ -149,6 +149,11 @@ menus:
     pre: github
     url: https://github.com/maverobot
     weight: "50"
+  - name: Linkedin
+    title:
+    pre: linkedin
+    url: https://www.linkedin.com/in/zheng-qu-robotics/
+    weight: "60"
   search: # Search page's quick links
   - name: Categories
     title: Categories
