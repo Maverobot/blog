@@ -82,7 +82,7 @@ params:
     heroCTASecondaryUrl: "/contact/"
     heroBackgroundImage: "/uploads/pano_marienplatz.jpg"
     # Blog Section
-    disableBlogSection: true
+    disableBlogSection: false
     blogTitle: Latest Posts
     blogDescription: This is my latest blog posts
     seeMoreText: More Posts
