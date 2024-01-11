@@ -37,8 +37,8 @@ params:
     bing:
       SiteVerificationTag: # Bing Site Verification
   env: production
-  author: Your Name
-  description: Your website description
+  author: Zheng Qu
+  description: My personal website
   math: false
   images:
   - "/uploads/og.webp"
