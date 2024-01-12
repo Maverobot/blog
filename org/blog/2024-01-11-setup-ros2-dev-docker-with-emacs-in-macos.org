@@ -12,18 +12,18 @@
 #+hugo_categories:
 
 #+hugo_draft: false
+Setting up the right environment is crucial for effective development. In this
+blog post, I will guide you through setting up a [[https://docs.ros.org/en/rolling/index.html][ROS 2]] development environment
+using [[https://www.docker.com][Docker]] and [[https://www.gnu.org/software/emacs/download.html][Emacs]] on [[https://www.apple.com/de/macos/sonoma/][MacOS]]. This guide assumes that Emacs is already
+installed on your system. If that is not the case, please check
 
-This tutorial assumes that emacs has been installed properly already. If that is not the case, please check
-
-- [[https://www.gnu.org/software/emacs/download.html][GNU Emacs]]
+-
 - [[https://www.spacemacs.org][Spacemacs]]
 - [[https://github.com/doomemacs/doomemacs][Doomemacs]]
 
-Now we will set up a development environment for working with ROS 2 containers in emacs on MacOS.
-
 * Install Docker
 
-To install docker, use the following commands.
+You need to install [[https://brew.sh][Homebrew]] first. After that, you can install Docker with:
 
 #+begin_src sh
   brew install --cask docker
@@ -76,11 +76,11 @@ Therefore add the following to ~.devcontainer/devcontainer.json~:
   {
     "name": "ROS 2 Development Container",
     "privileged": true,
-    "remoteUser": "USERNAME",
+    "remoteUser": "YOUR_USERNAME",
     "build": {
       "dockerfile": "Dockerfile",
       "args": {
-        "USERNAME": "USERNAME"
+        "USERNAME": "YOUR_USERNAME"
       }
     },
     "workspaceFolder": "/home/ws",
@@ -112,11 +112,11 @@ Therefore add the following to ~.devcontainer/devcontainer.json~:
       "source=${localWorkspaceFolder}/../cache/ROS_DISTRO/install,target=/home/ws/install,type=bind",
       "source=${localWorkspaceFolder}/../cache/ROS_DISTRO/log,target=/home/ws/log,type=bind"
     ],
-    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R USERNAME /home/ws/"
+    "postCreateCommand": "sudo rosdep update && sudo rosdep install --from-paths src --ignore-src -y && sudo chown -R YOUR_USERNAME /home/ws/"
   }
 #+end_src
 
-Open the file in your editor, search for ~USERNAME~ and replace it with your ~username~.
+Open the file in your editor, search for ~YOUR_USERNAME~ and replace it with your username.
 If you do not know your username, you can find it by running ~echo $USER~ in the terminal.
 Also replace ~ROS_DISTRO~, with the ROS 2 distribution that you want to use and added to the cache previously, for example, ~humble~ or ~rolling~.
 
@@ -125,7 +125,7 @@ Also replace ~ROS_DISTRO~, with the ROS 2 distribution that you want to use and 
 Open the ~Dockerfile~ and add the following contents:
 #+begin_src dockerfile
   FROM ros:ROS_DISTRO
-  ARG USERNAME=USERNAME
+  ARG USERNAME=YOUR_USERNAME
   ARG USER_UID=1000
   ARG USER_GID=$USER_UID
 
@@ -151,11 +151,14 @@ Open the ~Dockerfile~ and add the following contents:
   CMD ["/bin/bash"]
 #+end_src
 
-Search here also for the ~USERNAME~ and replace it with your ~username~ and the ~ROS_DISTRO~ with the ROS 2 distribution you wish to use and added to the cache previously.
+Search here also for the ~YOUR_USERNAME~ and replace it with your username and the
+~ROS_DISTRO~ with the ROS 2 distribution you wish to use and added to the cache
+previously.
 
 * Open and Build Devcontainer
 
-To build and start the devcontainer, we need [[https://github.com/devcontainers/cli][GitHub - devcontainers/cli]]. Install it with:
+To build and start the [[https://code.visualstudio.com/docs/devcontainers/containers][devcontainer]], we need [[https://github.com/devcontainers/cli][GitHub - devcontainers/cli]]. Install
+it with:
 
 #+begin_src sh
   brew install devcontainer
