@@ -161,7 +161,7 @@ params:
       enable: true
       title: "Here are a few technologies I've worked with:"
       items:
-        - "C++"
+        - "C++ 14/17/20"
         - "Python"
         - "ROS / ROS 2"
         - "Robotics"
@@ -169,6 +169,10 @@ params:
         - "Generative AI"
         - "Deep Learning"
         - "CANOpen"
+        - "Git"
+        - "CI/CD"
+        - "Docker"
+        - "Golang"
 
   # Experience
   experience:
