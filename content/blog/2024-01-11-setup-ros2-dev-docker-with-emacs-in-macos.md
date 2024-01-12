@@ -2,16 +2,16 @@
 title = "Setup ROS 2 Developement Environment with Docker and Emacs on MacOS"
 author = ["Zheng Qu"]
 date = 2024-01-11T00:00:00+01:00
-lastmod = 2024-01-11T23:47:04+01:00
+lastmod = 2024-01-12T01:35:18+01:00
 draft = false
 weight = 2001
 +++
 
 This tutorial assumes that emacs has been installed properly already. If that is not the case, please check
 
--   [GNU Emacs - GNU Project - Free Software Foundation (FSF)](https://www.gnu.org/software/emacs/download.html)
--   [Spacemacs: Emacs advanced Kit focused on Evil](https://www.spacemacs.org)
--   <https://github.com/doomemacs/doomemacs>
+-   [GNU Emacs](https://www.gnu.org/software/emacs/download.html)
+-   [Spacemacs](https://www.spacemacs.org)
+-   [Doomemacs](https://github.com/doomemacs/doomemacs)
 
 Now we will set up a development environment for working with ROS 2 containers in emacs on MacOS.
 
