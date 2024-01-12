@@ -2,7 +2,7 @@
 title = "Setup ROS 2 Development Environment with Docker and Emacs on MacOS"
 author = ["Zheng Qu"]
 date = 2024-01-11T00:00:00+01:00
-lastmod = 2024-01-12T13:03:15+01:00
+lastmod = 2024-01-12T13:11:01+01:00
 tags = ["ROS2", "Emacs", "Docker", "MacOS"]
 draft = false
 weight = 2001
@@ -127,16 +127,28 @@ ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
 # Create the user
-RUN groupadd --gid $USER_GID $USERNAME \
-    && useradd --uid $USER_UID --gid $USER_GID -m $USERNAME \
-    #
-    # [Optional] Add sudo support. Omit if you don't need to install software after connecting.
-    && apt-get update \
-    && apt-get install -y sudo \
-    && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
-    && chmod 0440 /etc/sudoers.d/$USERNAME
+RUN groupadd --gid $USER_GID $USERNAME
+RUN useradd --uid $USER_UID --gid $USER_GID -m $USERNAME
+#
+# [Optional] Add sudo support. Omit if you don't need to install software after connecting.
+RUN apt-get -y update
+RUN apt-get install -y sudo
+RUN echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME
+RUN chmod 0440 /etc/sudoers.d/$USERNAME
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y python3-pip
+
+# Install a few important dev dependencies
+RUN apt-get install -y \
+    ament-cmake \
+    ccls \
+    python3-colcon-common-extensions \
+    python3-pip \
+    vim \
+    clang \
+    clang-format \
+    clang-tidy
+
+RUN echo "source /opt/ros/ROS_DISTRO/setup.bash" >> /home/$USERNAME/.bashrc
 ENV SHELL /bin/bash
 
 # ********************************************************
