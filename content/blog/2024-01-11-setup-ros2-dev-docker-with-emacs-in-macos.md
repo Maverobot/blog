@@ -2,7 +2,7 @@
 title = "Setup ROS 2 Development Environment with Docker and Emacs on MacOS"
 author = ["Zheng Qu"]
 date = 2024-01-11T00:00:00+01:00
-lastmod = 2024-01-12T13:11:01+01:00
+lastmod = 2024-01-12T17:29:35+01:00
 tags = ["ROS2", "Emacs", "Docker", "MacOS"]
 draft = false
 weight = 2001
@@ -99,7 +99,7 @@ Therefore add the following to `.devcontainer/devcontainer.json`:
   },
   "runArgs": [
     "--net=host",
-    "-e", "DISPLAY=${env:DISPLAY}"
+    "-e", "DISPLAY=host.docker.internal:0"
   ],
   "mounts": [
     "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
@@ -205,10 +205,69 @@ Once the file is opened, you can edit it as usual. `ccls` or `clangd` will autom
 -   the `compile_commands.json` is present in the build folder of the ROS 2 workspace,
 -   and the executable `ccls` or `clangd` is installed in the container.
 
-Enjoy!
+
+## Test ROS 2 CLI {#test-ros-2-cli}
+
+Here we will follow the [turtlesim, ros2, and rqt — ROS 2 Tutorial](https://docs.ros.org/en/rolling/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html).
+
+
+### Install turtlesim {#install-turtlesim}
+
+First, we need to install the turtlesim package. Open a new terminal and run:
+
+```sh
+devcontainer exec --workspace-folder ~/ws_[project]/src bash
+```
+
+which gives you a bash shell in the container. Then in the bash shell, run:
+
+```sh
+sudo apt install ros-ROS_DISTRO-turtlesim
+```
+
+Now check if the installation was successful by running:
+
+```sh
+ros2 pkg executables turtlesim
+```
+
+
+### Start turtlesim {#start-turtlesim}
+
+To start turtlesim, you can either run:
+
+-   `ros2 run turtlesim turtlesim_node` in the bash shell of the container, or
+-   `devcontainer exec --workspace-folder ~/ws_[project]/src ros2 run turtlesim turtlesim_node` in a new terminal.
+
+Now you may encounter an error saying
+
+```nil
+Error: Can't open display: host.docker.internal:0
+```
+
+To solve it you need to follow the steps here:
+
+-   Install [XQuartz](https://www.xquartz.org) with `brew install --cask xquartz`.
+-   Open XQuartz and go to `Preferences` -&gt; `Security` and check `Allow connections from network clients`.
+-   Reboot the computer.
+-   Run `xhost +localhost` in a terminal to allow connections to the MacOS host.
+
+Now you would be able to start turtlesim and see a "TurtleSim" window pop up.
+
+
+### Use TurtleSim {#use-turtlesim}
+
+To control the turtle, you can either run:
+
+-   `ros2 run turtlesim turtle_teleop_key` in the bash shell of the container, or
+-   `devcontainer exec --workspace-folder ~/ws_[project]/src ros2 run turtlesim turtle_teleop_key` in a new terminal.
+
+Now you can use the arrow keys to control the turtle in the "TurtleSim" window. And you should be able to continue
+the [tutorial](https://docs.ros.org/en/rolling/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html) to learn more about ROS 2 CLI.
 
 
 ## References {#references}
 
 -   [Setup ROS 2 with VSCode and Docker](https://docs.ros.org/en/iron/How-To-Guides/Setup-ROS-2-with-VSCode-and-Docker-Container.html)
 -   [Dev Containers Part 2: Setup, the devcontainer CLI &amp; Emacs](https://happihacking.com/blog/posts/2023/dev-containers-emacs/)
+-   [Running X apps on MacOS with docker](http://mamykin.com/posts/running-x-apps-on-mac-with-docker/)
