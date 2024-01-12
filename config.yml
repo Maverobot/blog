@@ -161,7 +161,7 @@ params:
       enable: true
       title: "Here are a few technologies I've worked with:"
       items:
-        - "C++ 14/17/20"
+        - "C++ 11/14/17/20"
         - "Python"
         - "ROS / ROS 2"
         - "Robotics"

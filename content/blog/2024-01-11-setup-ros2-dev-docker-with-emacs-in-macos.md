@@ -2,7 +2,7 @@
 title = "Setup ROS 2 Developement Environment with Docker and Emacs on MacOS"
 author = ["Zheng Qu"]
 date = 2024-01-11T00:00:00+01:00
-lastmod = 2024-01-12T01:35:18+01:00
+lastmod = 2024-01-12T01:53:09+01:00
 draft = false
 weight = 2001
 +++
@@ -64,7 +64,7 @@ ws_[project]
 ```
 
 
-## Edit `devcontainer.json` for your environment {#edit-devcontainer-dot-json-for-your-environment}
+## Edit `devcontainer.json` {#edit-devcontainer-dot-json}
 
 For the Dev Container to function properly, we have to build it with the correct user.
 Therefore add the following to `.devcontainer/devcontainer.json`:
@@ -153,7 +153,7 @@ CMD ["/bin/bash"]
 Search here also for the `USERNAME` and replace it with your `username` and the `ROS_DISTRO` with the ROS 2 distribution you wish to use and added to the cache previously.
 
 
-## Open and Build Development Container {#open-and-build-development-container}
+## Open and Build Devcontainer {#open-and-build-devcontainer}
 
 To build and start the devcontainer, we need [GitHub - devcontainers/cli](https://github.com/devcontainers/cli). Install it with:
 
@@ -177,7 +177,7 @@ devcontainer exec --workspace-folder ~/ws_[project]/src colcon build --cmake-arg
 ```
 
 
-## Edit files in the container with emacs {#edit-files-in-the-container-with-emacs}
+## Edit files with emacs {#edit-files-with-emacs}
 
 Open the file you want to edit with \`helm-find-files\`, type `/docker:` and press `TAB` to auto-complete the docker container name.
 Then you can find the file you want to edit in the container with path like:
@@ -191,6 +191,8 @@ Once the file is opened, you can edit it as usual. `ccls` or `clangd` will autom
 -   it is configured in your emacs configuration,
 -   the `compile_commands.json` is present in the build folder of the ROS 2 workspace,
 -   and the executable `ccls` or `clangd` is installed in the container.
+
+Enjoy!
 
 
 ## References {#references}
