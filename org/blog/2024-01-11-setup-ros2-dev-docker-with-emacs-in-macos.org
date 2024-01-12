@@ -4,7 +4,7 @@
 #+hugo_weight: 2001
 #+hugo_auto_set_lastmod: t
 
-#+title: Setup ROS 2 Developement Environment with Docker and Emacs on MacOS
+#+title: Setup ROS 2 Development Environment with Docker and Emacs on MacOS
 #+date: <2024-01-11>
 #+author: Zheng Qu
 
@@ -15,11 +15,7 @@
 Setting up the right environment is crucial for effective development. In this
 blog post, I will guide you through setting up a [[https://docs.ros.org/en/rolling/index.html][ROS 2]] development environment
 using [[https://www.docker.com][Docker]] and [[https://www.gnu.org/software/emacs/download.html][Emacs]] on [[https://www.apple.com/de/macos/sonoma/][MacOS]]. This guide assumes that Emacs is already
-installed on your system. If that is not the case, please check
-
--
-- [[https://www.spacemacs.org][Spacemacs]]
-- [[https://github.com/doomemacs/doomemacs][Doomemacs]]
+installed on your system.
 
 * Install Docker
 
