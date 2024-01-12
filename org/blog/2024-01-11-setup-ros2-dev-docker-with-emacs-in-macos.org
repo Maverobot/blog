@@ -188,7 +188,7 @@ To build the ROS 2 workspace, run
 #+end_src
 
 * Edit files with emacs
-Open the file you want to edit with `helm-find-files`, type ~/docker:~ and press ~TAB~ to auto-complete the docker container name.
+Open the file you want to edit with ~helm-find-files~, type ~/docker:~ and press ~TAB~ to auto-complete the docker container name.
 Then you can find the file you want to edit in the container with path like:
 
 #+begin_src sh

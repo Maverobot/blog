@@ -2,7 +2,7 @@
 title = "Setup ROS 2 Development Environment with Docker and Emacs on MacOS"
 author = ["Zheng Qu"]
 date = 2024-01-11T00:00:00+01:00
-lastmod = 2024-01-12T17:29:35+01:00
+lastmod = 2024-01-12T19:38:28+01:00
 tags = ["ROS2", "Emacs", "Docker", "MacOS"]
 draft = false
 weight = 2001
@@ -192,7 +192,7 @@ devcontainer exec --workspace-folder ~/ws_[project]/src colcon build --cmake-arg
 
 ## Edit files with emacs {#edit-files-with-emacs}
 
-Open the file you want to edit with \`helm-find-files\`, type `/docker:` and press `TAB` to auto-complete the docker container name.
+Open the file you want to edit with `helm-find-files`, type `/docker:` and press `TAB` to auto-complete the docker container name.
 Then you can find the file you want to edit in the container with path like:
 
 ```sh
