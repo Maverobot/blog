@@ -16,3 +16,6 @@ git submodule update --init --recursive
 # Start hugo server locally
 hugo server
 ```
+
+#### TODO
+* Posts should be sharable to linkedin
