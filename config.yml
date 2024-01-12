@@ -127,7 +127,7 @@ params:
     title: "Zheng."
     subtitle: "I work with Robots and AI."
     content: "A freelance Roboticist specializing in C++, with expertise in Linux and ROS."
-    image: /images/hero.svg
+    image: "/uploads/self.jpeg"
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -153,7 +153,7 @@ params:
     title: "About Me"
     image: "/uploads/self.jpeg"
     content: |-
-      I am a Senior Robotics Software Engineer with a passion for creating intelligent machines. With a strong background in C++ and robotics, I have contributed to cutting-edge projects in the field. My expertise spans software development, robot behavior design, and open-source collaboration. I thrive in agile environments and am dedicated to advancing the field of robotics.
+      I have a passion for creating intelligent machines. With a strong background in C++ and robotics, I have contributed to cutting-edge projects in the field. My expertise spans software development, robot behavior design, and open-source collaboration. I thrive in agile environments and am dedicated to advancing the field of robotics.
 
       I am currently working as a freelancer and am open to new opportunities. If you have a project that you want to get started, think you need my help with something, or just fancy saying hey, then get in touch.
 
