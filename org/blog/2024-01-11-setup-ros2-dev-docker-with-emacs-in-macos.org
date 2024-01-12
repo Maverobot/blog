@@ -7,6 +7,7 @@
 #+title: Setup ROS 2 Development Environment with Docker and Emacs on MacOS
 #+date: <2024-01-11>
 #+author: Zheng Qu
+#+filetags: :ROS2:Emacs:Docker:MacOS:
 
 #+hugo_tags:
 #+hugo_categories:

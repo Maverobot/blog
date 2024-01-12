@@ -2,7 +2,8 @@
 title = "Setup ROS 2 Development Environment with Docker and Emacs on MacOS"
 author = ["Zheng Qu"]
 date = 2024-01-11T00:00:00+01:00
-lastmod = 2024-01-12T09:16:18+01:00
+lastmod = 2024-01-12T13:03:15+01:00
+tags = ["ROS2", "Emacs", "Docker", "MacOS"]
 draft = false
 weight = 2001
 +++
