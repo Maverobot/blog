@@ -15,7 +15,7 @@ outputs:
 pagination:
   pagerSize: 3
 enableRobotsTXT: true
-# disqusShortname: your-disqus-shortname
+disqusShortname: qurobotics
 # googleAnalytics: G-MEASUREMENT_ID
 
 markup:
