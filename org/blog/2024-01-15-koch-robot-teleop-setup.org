@@ -13,6 +13,7 @@
 #+hugo_categories:
 
 #+hugo_draft: false
+#+description: Reviving Koch robots as a claw-machine-style teleop setup with ESP32, picoRoS, Zenoh, screw theory kinematics, and ros2_control.
 
 Fresh out of the New Year break, I finally got around to reviving a pair of small [[https://github.com/jess-moss/koch-v1-1][Koch robots]] that I 3D-printed back in 2024. They had been collecting dust after some early experiments with an ACT model, so I decided to give them a second life — this time as a small claw-machine-style teleop setup that my son can eventually play with.
 
