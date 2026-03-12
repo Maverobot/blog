@@ -118,8 +118,8 @@ params:
       disableAbout: false
       disableExperience: true
       disableEducation: true
-      disableProjects: true
-      disableAchievements: true
+      disableProjects: false
+      disableAchievements: false
       disableContact: false
 
   # Hero
@@ -225,77 +225,70 @@ params:
           enable: true
           url: "https://example.com"
 
-  # Achievements
+  # Services (using achievements section)
   achievements:
-    enable: false
-    # title: "Custom Name"
+    enable: true
+    title: "Services"
     items:
-      - title: Google kickstart runner
-        content: I solved all problems with optimal solution.
-        url: https://example.com
-        image: /images/achievment.jpg
-      - title: Facebook Hackathon Winner
-        content: Developed a product using Artificial Intelligence.
-        image: /images/achievment.jpg
-      - title: Hugo Profile
-        content: Developed a theme and getting 1K+ downloads per month.
-        url: "https://github.com/gurusabarish/hugo-profile"
-        image: /images/achievment.jpg
-      - title: Microsoft Imagine Runner
-        content: We are developed a product which can help others.
-      - title: Google Summer of Code
-        content: Contributed to a open source project.
-        url: https://example.com
+      - title: Real-time C++ Development
+        content: High-performance robot software in modern C++ (up to C++20) with deterministic timing guarantees for 1 kHz control loops and safety-critical systems.
+      - title: ROS 2 Integration & Migration
+        content: Full-stack ROS 2 development — from custom controllers and hardware interfaces via ros2_control to system-level architecture and launch infrastructure.
+      - title: CANOpen / Fieldbus Integration
+        content: CiA-402 compliant motor drivers, CANOpen device profiles, and hardware abstraction layers connecting industrial fieldbuses to ROS.
+      - title: Digital Twin & Simulation
+        content: Nvidia Omniverse-based simulators, automated URDF generation, and virtual hardware devices for hardware-free testing and validation.
+      - title: Robot Software Architecture
+        content: Behavior stacks, state machines, CI/CD pipelines, and profiling toolchains for maintainable, testable robot software at scale.
 
-  # projects
+  # Projects
   projects:
-    enable: false
-    # title: "Custom Name"
+    enable: true
+    title: "Open Source"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
-        featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
+      - title: Koch Robot Teleop
+        content: Claw-machine-style teleoperation of 3D-printed Koch robots using ESP32, picoRoS, Zenoh, screw theory kinematics, and ros2_control.
+        image: https://raw.githubusercontent.com/Maverobot/koch_ros/main/demo.gif
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "ROS 2"
+          - "ros2_control"
+          - "Screw Theory"
+          - "ESP32"
         links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
+            url: https://github.com/Maverobot/koch_ros
 
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
+      - title: ob-lean4
+        content: Emacs org-babel package for evaluating Lean 4 code blocks — bringing interactive theorem proving into org-mode notebooks.
+        image: https://lean-lang.org/static/png/lean-logo-official-TM-white-2400x900.png
         badges:
-          - "Django"
-          - "Bootstrap"
+          - "Emacs Lisp"
+          - "Lean 4"
+          - "Org-babel"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+            url: https://github.com/Maverobot/ob-lean4
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+      - title: Libtorch Examples
+        content: Collection of C++ examples using PyTorch's libtorch frontend — covering function approximation, LSTM, and time series prediction.
+        image: https://pytorch.org/assets/images/pytorch-logo.png
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "C++"
+          - "PyTorch"
+          - "CMake"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: https://github.com/Maverobot/libtorch_examples
+
+      - title: PlanarMechanics
+        content: Open-source Modelica library for planar multi-body mechanical systems, developed at DLR.
+        image: https://raw.githubusercontent.com/dzimmer/PlanarMechanics/master/PlanarMechanics/Resources/Images/Examples/CraneCrab_1.png
+        badges:
+          - "Modelica"
+          - "Multi-body"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/dzimmer/PlanarMechanics
 
   #Contact
   contact:
