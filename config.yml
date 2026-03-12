@@ -56,7 +56,7 @@ Menus:
 params:
   title: "Qu Robotics"
   description: My personal portfolio and blog
-  hostName: "https://qurobotics.de"
+  # hostName removed — .Permalink already includes baseURL, so this caused doubled URLs in LinkedIn shares
   # staticPath: ""  # The path to serve the static files from
   favicon: "/uploads/logo.png"
 
