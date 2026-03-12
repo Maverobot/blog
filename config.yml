@@ -127,8 +127,8 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Zheng."
-    subtitle: "I work with Robots and AI."
-    content: "A freelance Roboticist specializing in C++, with expertise in Linux and ROS."
+    subtitle: "Building Real-Time Robot Software."
+    content: "A freelance Roboticist building real-time robot software in C++, with 10+ years of experience across collaborative robots and intralogistics."
     image: "/uploads/self.jpeg"
     bottomImage:
       enable: true
@@ -166,15 +166,15 @@ params:
         - "C++ 11/14/17/20"
         - "Python"
         - "ROS / ROS 2"
-        - "Robotics"
+        - "Real-time Control"
+        - "Screw Theory / Kinematics"
+        - "CANOpen / CiA-402"
         - "Linux"
-        - "Generative AI"
-        - "Deep Learning"
-        - "CANOpen"
         - "Git"
-        - "CI/CD"
         - "Docker"
-        - "Golang"
+        - "CI/CD"
+        - "CUDA"
+        - "Nvidia Omniverse"
 
   # Experience
   experience:
