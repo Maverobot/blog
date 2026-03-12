@@ -283,7 +283,7 @@ params:
   contact:
     enable: true
     # title: "Custom Name"
-    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    content: Have a robotics challenge? Let's discuss how I can help. I'm open to freelance projects and consulting.
     email: zheng.qu.robotics@gmail.com
     btnName: Mail Me
     # formspree:
