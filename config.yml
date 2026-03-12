@@ -128,7 +128,7 @@ params:
     intro: "Hi, my name is"
     title: "Zheng."
     subtitle: "Building Real-Time Robot Software."
-    content: "A freelance Roboticist building real-time robot software in C++, with 10+ years of experience across collaborative robots and intralogistics."
+    content: "A freelance robotics engineer building real-time robot software in C++, with 10+ years of experience across collaborative, humanoid, and mobile robots."
     image: "/uploads/self.jpeg"
     bottomImage:
       enable: true
@@ -155,9 +155,11 @@ params:
     title: "About Me"
     image: "/uploads/self.jpeg"
     content: |-
-      I have a passion for creating intelligent machines. With a strong background in C++ and robotics, I have contributed to cutting-edge projects in the field. My expertise spans software development, robot behavior design, and open-source collaboration. I thrive in agile environments and am dedicated to advancing the field of robotics.
+      Robotics software engineer with over 10 years of experience shipping real-time robot software in C++. At Franka Robotics, I spent 7 years building the behavior stack and the open-source control interface for one of the most widely used collaborative robots in research — and co-invented 7 patents on dual-arm coordination and impedance control along the way.
 
-      I am currently working as a freelancer and am open to new opportunities.
+      Today I work as a freelance roboticist, combining CANOpen, modern C++, ROS 2, and control theory to build things that move. I'm equally comfortable working close to the hardware as I am designing high-level robot behaviors or setting up CI/CD pipelines.
+
+      I'm open to interesting collaborations — especially in real-time control, robotics software, and open-source tooling.
 
     skills:
       enable: true
