@@ -56,6 +56,7 @@ Menus:
 params:
   title: "Qu Robotics"
   description: My personal portfolio and blog
+  hostName: "https://qurobotics.de"
   # staticPath: ""  # The path to serve the static files from
   favicon: "/uploads/green_logo.png"
 
