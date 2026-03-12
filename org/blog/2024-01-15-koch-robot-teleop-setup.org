@@ -1,0 +1,49 @@
+#+hugo_base_dir: ../../
+#+hugo_section: blog
+
+#+hugo_weight: 2001
+#+hugo_auto_set_lastmod: t
+
+#+title: Koch Robot Teleop Setup: Combining Embedded Systems, Control Theory, and ROS2
+#+date: <2026-01-08>
+#+author: Zheng Qu
+#+filetags: :ROS2:Embedded-Systems:Control-Theory:Teleoperation:ESP32:Koch-Robot:
+
+#+hugo_tags:
+#+hugo_categories:
+
+#+hugo_draft: false
+
+Fresh out of the New Year break, I finally got around to reviving a pair of small [[https://github.com/jess-moss/koch-v1-1][Koch robots]] that I 3D-printed back in 2024. They had been collecting dust after some early experiments with an ACT model, so I decided to give them a second life — this time as a small claw-machine-style teleop setup that my son can eventually play with.
+
+* Technical Highlights
+
+- Teleoperation via a joystick connected to an *ESP32* board from the ROSCon 2025 ros2_control workshop
+- *picoRoS* running directly on the ESP32, communicating with the robot over *Zenoh*
+- Handwritten kinematics and Jacobian based on screw theory
+- Nullspace velocity control for redundancy handling
+- Thoughtful joystick mapping for intuitive teleop
+- Controllers implemented using *ros2_control*
+
+A fun way to combine embedded systems, control theory, ROS2, and some practical motivation at home.
+
+* Demo
+
+Check out the video below where I teleop the follower arm with a joystick:
+
+#+begin_export hugo
+{{< figure src="https://raw.githubusercontent.com/Maverobot/koch_ros/main/demo.gif" caption="Jogging the follower arm with joystick input" >}}
+#+end_export
+
+* Code
+
+All code is open source and available on GitHub:
+
+- [[https://github.com/Maverobot/koch_ros][koch_ros]] — where a leader-follower controller is also implemented (the follower arm can mirror the leader arm's movements)
+- [[https://github.com/Maverobot/picoros_playground][picoros_playground]]
+- [[https://github.com/Maverobot/dynamixel_hardware][dynamixel_hardware]]
+
+* COMMENT Local Variables
+# Local Variables:
+# eval: (org-hugo-auto-export-mode)
+# End:
