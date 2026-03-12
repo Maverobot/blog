@@ -2,6 +2,7 @@
 title:  "How to boot from grub-rescue shell"
 date:   2018-09-23T16:32:00+02:00
 categories: ["Tutorials"]
+tags: ["Linux", "GRUB", "dual-boot"]
 thumbnailImage: https://i.ibb.co/ys52Ftt/fire-man.jpg
 coverImage: https://i.ibb.co/ys52Ftt/fire-man.jpg
 ---

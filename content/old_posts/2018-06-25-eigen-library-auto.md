@@ -2,6 +2,7 @@
 title:  "Keyword auto with Eigen library"
 date:   2018-06-25T22:31:00+02:00
 categories: ["General"]
+tags: ["C++", "Eigen"]
 ---
 
 Today I encountered a weird problem when using `Eigen` library with keyword `auto`. The scenario is as follows:

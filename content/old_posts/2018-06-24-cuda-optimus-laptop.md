@@ -2,6 +2,7 @@
 title:  "How to install CUDA on a laptop with optimus"
 date:   2018-06-24T13:50:00+02:00
 categories: ["Tutorials"]
+tags: ["CUDA", "Linux", "GPU"]
 ---
 
 I tried it many times and finally installed CUDA 7.5 on my laptop (Nvidia GeForce 750M) with optimus. It was very tricky but these steps worked for me.

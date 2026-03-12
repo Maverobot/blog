@@ -2,6 +2,7 @@
 title:  "How to reassign a static IP address with dnsmasq"
 date:   2018-07-06T15:30:00+02:00
 categories: ["Tutorials"]
+tags: ["Linux", "networking", "dnsmasq"]
 ---
 This post is a revised version of [link][original post].
 

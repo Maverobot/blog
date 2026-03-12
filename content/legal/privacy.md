@@ -1,9 +1,10 @@
 ---
 title: Privacy Policy
 date: 2021-01-21T23:22:20+08:00
-layout: legal # is necessary
+layout: legal
 searchHidden: true
 url: /legal/privacy
+tags: []
 description: This is the privacy policy page for Qu Robotics (qurobotics.de)
 ---
 ## Privacy Policy

@@ -2,6 +2,7 @@
 title:  "How to configure DHCP server for local network"
 date:   2018-07-06T14:30:00+02:00
 categories: ["Tutorials"]
+tags: ["Linux", "networking"]
 ---
 
 Here are the steps for configuring a DHCP server in a local network.

@@ -2,6 +2,7 @@
 title:  Setup hotspot on Ubuntu 14.04
 date:   2018-06-24T13:57:00+02:00
 categories: ["Tutorials"]
+tags: ["Linux", "networking"]
 ---
 
 * Disable WIFI and plug in an internet cable to your laptop so that your Ubuntu is connect to a wired internet and wireless is disabled.

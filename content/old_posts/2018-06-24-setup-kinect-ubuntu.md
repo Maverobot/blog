@@ -2,6 +2,7 @@
 title:  Setup Kinect on Ubuntu 14.04
 date:   2018-06-24T13:53:00+02:00
 categories: ["Tutorials"]
+tags: ["Linux", "Kinect", "Robotics"]
 ---
 
 The following steps are needed for Kinect to work properly in Ubuntu 14.04.

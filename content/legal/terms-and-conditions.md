@@ -1,10 +1,11 @@
 ---
 title: Terms and Conditions
 date: 2021-01-21T23:22:20+08:00
-layout: legal # is necessary
+layout: legal
 searchHidden: true
 url: /legal/terms-and-conditions
-description: This is the terms and conditions page for Qu Robotics (qurobotics.com)
+tags: []
+description: This is the terms and conditions page for Qu Robotics (qurobotics.de)
 ---
 ## Terms and Conditions for Qu Robotics
 ### Introduction
