@@ -163,7 +163,7 @@ params:
 
     skills:
       enable: true
-      title: "Here are a few technologies I've worked with:"
+      title: "Technologies I work with"
       items:
         - "C++ 11/14/17/20"
         - "Python"
