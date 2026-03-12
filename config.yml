@@ -153,18 +153,18 @@ params:
       enable: true
       title: "Technologies I work with"
       items:
-        - "C++ 11/14/17/20"
-        - "Python"
         - "ROS / ROS 2"
         - "Real-time Control"
         - "Kinematics"
         - "Impedance Control"
         - "CANOpen"
+        - "C++ 11/14/17/20"
+        - "Python"
+        - "CUDA"
         - "Linux"
-        - "Git"
         - "Docker"
         - "CI/CD"
-        - "CUDA"
+        - "Git"
         - "Nvidia Omniverse"
 
   # Experience
