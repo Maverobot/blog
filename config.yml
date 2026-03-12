@@ -169,7 +169,7 @@ params:
         - "Python"
         - "ROS / ROS 2"
         - "Real-time Control"
-        - "Screw Theory / Kinematics"
+        - "Kinematics"
         - "CANOpen / CiA-402"
         - "Linux"
         - "Git"
