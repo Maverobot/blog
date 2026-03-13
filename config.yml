@@ -143,7 +143,7 @@ params:
     title: "About Me"
     image: "/uploads/self.jpeg"
     content: |-
-      Robotics software engineer with over 10 years of experience shipping real-time robot software in C++. At Franka Robotics, I spent 7 years building the behavior stack and the open-source control interface for one of the most widely used collaborative robots in research — and co-authored 7 patents on dual-arm coordination and impedance control along the way.
+      Robotics software engineer with over 10 years of experience shipping real-time robot software in C++. At Franka Robotics, I spent 7 years building the behavior and control stack for one of the most widely used collaborative robots in research — and co-authored 7 patents on dual-arm coordination and impedance control along the way.
 
       Today I work as a freelance roboticist, combining CANOpen, modern C++, ROS 2, and control theory to build things that move. I'm equally comfortable working close to the hardware as I am designing high-level robot behaviors or setting up CI/CD pipelines.
 
